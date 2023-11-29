@@ -137,31 +137,41 @@ nav{
     line-height: 1.5;
     height: 160px;
 }
+/* pagination */
 .pagination{
     margin:60px 0 10px;
     box-sizing: border-box;
+
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
     
 }
-.pagination .page_btn{
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    box-sizing: border-box;
+/* GENERAL STYLES */
+.pagination{
+    margin-top: 80px;
 }
-.pagination .page_one_btn{
-    border-bottom: 1px solid #000;
-    cursor: pointer;
+.pagination ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
-.pagination .page_two_btn:hover{
-    border-bottom: 1px solid #000;
-    cursor: pointer;
+.pagination ul li{
+    margin: 0 10px;
 }
-.pagination .page_two_btn:hover +.pagination .page_one_btn{
-    border-bottom: 0px solid #000;
-    background-color: #C7B09E;
+.pagination a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 6px;
+    color: #000000;
+    font-size: 24px;
+}
+/* TWO */
+.pagination .is-active {
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
 }
 
 
