@@ -1,0 +1,232 @@
+body{
+    font-family: 'Gilda Display','Noto Serif TC';
+    background-image: url(../img/about_Harmony_bg.png);
+}
+header{
+    height: 100px;
+}
+
+/* NAV */
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    /* display: none; */
+}
+.navbar_white{
+    display: flex; /* none */
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color: #FFFFFF;
+}
+.navbar-logo img{    
+    margin: auto;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+}
+.navbar-menu li{
+    padding: 10px;
+}
+.navbar_white a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none ;
+    color: #000;
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.navbar-toggler{
+    color:white;
+}
+.navbar-toggler ul{
+    display: none;
+}
+/* NAV */
+/* breadcrumb */
+.breadcrumb .breadcrumb-list{
+    list-style: none;
+    margin: 100px 240px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    border-bottom: 1px solid#000;
+}
+.breadcrumb .breadcrumb-list li{
+    display: inline;
+}
+.breadcrumb .breadcrumb-list li a{
+    text-decoration: none;
+    color: #000;
+}
+.breadcrumb-list li:not(:last-child){
+    font-size: 30px;
+}
+.breadcrumb-list li:last-child{
+    font-size: 48px;
+}
+.breadcrumb-list li:not(:last-child)::after {
+    padding: 14px;
+    color: black;
+    content: "/\00a0";
+}
+/* breadcrumb */
+.harmony-office{
+    width: 1200px;
+    margin: auto;
+}
+.harmony-office img{
+    vertical-align: top;
+}
+.harmony-office p{
+    padding: 80px;
+    margin: auto;
+    font-size: 20px;
+    width: 600px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.harmony-element{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.harmony-element img{
+    vertical-align: top;
+}
+.harmony-element p{
+    font-size: 20px;
+    width: 640px;
+    letter-spacing: 2px;
+    line-height: 2;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+}
+.harmony-conclusion{
+    margin-top: 100px;
+    padding: 80px;
+}
+.harmony-conclusion p{
+
+    margin: auto;
+    font-size: 20px;
+    width: 800px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+.contact-us{
+    width: 100%;
+    text-align: center;
+}
+.contact-us a{
+    text-decoration: none;
+}
+.contact-us-btn{
+    margin: auto;
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid #626262;
+    position: relative;
+    display: inline-block;
+}
+.contact-us-btn::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(28, 31, 30);
+    transition: 0.3s ease-out;
+}
+.contact-us-btn span{
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #626262;
+    
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    width: 100%;
+    transition: 0.2s;
+}
+.contact-us-btn:hover span{
+    color: rgb(255,255,255);
+    outline: 0;
+    outline-offset: 0;
+    transition: 0.2s 0.1s;
+}
+.contact-us-btn:hover{
+    outline: 0;
+    outline-offset: 0;
+    cursor: pointer;
+}
+.hover-slide-right::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0; 
+    height: 100%; width: 0%;
+}
+.hover-slide-right:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+
+footer{
+    background-color: #EBEAE6;
+    padding: 20px 0 10px;
+    margin-top: 100px;
+}
+.footer-content{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer-content .footer_logo{
+    display: block;
+    align-self: center;
+}
+.footer-content .footer_seperate_left{
+    border-right:1px solid; 
+    width: 50px;
+}
+.footer-content .footer_seperate_right{
+    border-left:1px solid; 
+    width: 50px;
+}
+.footer-content .footer_contact{
+    font-size: 24px;
+    line-height: 1.5;
+}
+.footer_copyright{
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 10px ;
+    color: #7D7D7D;
+}
+@media screen and (width<768px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-content .footer_logo{
+        margin-bottom: 30px;
+    }
+    .footer-content .footer_seperate_left{
+        display: none;
+    }
+    .footer-content .footer_seperate_right{
+        display: none;
+    }
+    .footer-content .footer_contact{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}

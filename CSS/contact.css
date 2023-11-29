@@ -1,0 +1,276 @@
+body{
+    font-family: 'Gilda Display','Noto Serif TC';
+    background-image: url(../img/about_Harmony_bg.png);
+}
+header{
+    height: 100px;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    /* display: none; */
+}
+.navbar_white{
+    display: flex; /* none */
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color: #FFFFFF;
+}
+.navbar-logo img{    
+    margin: auto;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+}
+.navbar-menu li{
+    padding: 10px;
+}
+.navbar_white a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none ;
+    color: #000;
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.navbar-toggler{
+    color:white;
+}
+.navbar-toggler ul{
+    display: none;
+}
+.breadcrumb .breadcrumb-list{
+    list-style: none;
+    margin: 100px 240px;
+    padding-bottom: 40px;
+    padding-left: 120px;
+    border-bottom: 1px solid#000;
+}
+.breadcrumb .breadcrumb-list li{
+    display: inline;
+}
+.breadcrumb .breadcrumb-list li a{
+    text-decoration: none;
+    color: #000;
+}
+.breadcrumb-list li:not(:last-child){
+    font-size: 30px;
+}
+.breadcrumb-list li:last-child{
+    font-size: 48px;
+}
+.breadcrumb-list li:not(:last-child)::after {
+    padding: 14px;
+    color: black;
+    content: "/\00a0";
+}
+
+
+.contact-logo-area{
+    display: flex;
+    justify-content: center;
+}
+.contact-logo-area img{
+    display: block;
+}
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    text-align: center;
+    gap: 60px;
+    padding: 0 40px;
+}
+.contact-info-text{
+    text-align: left;
+    font-size: 20px;
+    line-height: 3;
+    align-self: center;
+    font-family: 'Noto Sans TC';
+}
+
+.contact-form{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form p{
+    font-size: 20px;
+    font-family: 'Noto Sans TC';
+}
+form{
+    margin-top: 60px;
+}
+label{
+    font-size: 16px;
+    font-family: 'Noto Sans TC';
+}
+label:hover{
+    cursor: pointer;
+}
+.form-input-style{
+    width: 430px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #313131;
+    margin: 20px 0 0 20px;
+    font-size: 16px;
+    padding: 2px;
+    vertical-align: baseline;
+}
+.form-input-style:focus{
+    outline: #7D7D7D;
+    box-shadow: 1px 1px 3px#7D7D7D;
+}
+.form-input-style:focus::placeholder{
+    opacity: 0;
+}
+.form-customer-name-style{
+    width: 300px;
+}
+.form-customer-note-style{
+    height: 120px;
+}
+/* 驗證碼 */
+.form-content-verify{
+    margin-top: 20px;
+}
+.form-customer-verify-style{
+    width: 200px;
+    margin-top: 0;
+}
+.form-content-verify{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.form-content-verify-code{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form-content-verify-code p{
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #313131;
+    padding: 0 10px;
+    vertical-align: middle;
+    padding: 2px;
+    line-height: 1.5;
+}
+.form-content-verify-code img{
+    display: block;
+    width: 20px;
+}
+/* radio */
+input[type="radio"]{
+    width: 12px;
+    height: 12px;
+    appearance: none;
+    border-radius: 50%;
+
+    border: 1px solid #313131;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+}
+input[type="radio"]:hover{
+    cursor: pointer;
+}
+input[type="radio"]:checked {
+    border: 4px solid #313131;
+}
+/* submit*/
+.form-submit{
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+}
+.submit-btn{
+    margin: auto ;
+    width: 120px;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #626262;
+    position: relative;
+    display: inline-block;
+    color: #626262;
+    box-shadow: 0px 0px 0px;
+    transition: .2s;
+}
+.submit-btn[value="送出"]{
+    font-size: 18px;
+}
+.submit-btn:hover{
+    color: #313131;
+    border: 1px solid #313131;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px;
+}
+.submit-btn:active{
+    color: #313131;
+    border: 1px solid #313131;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 1px;
+}
+
+
+
+/* footer */
+footer{
+    background-color: #EBEAE6;
+    padding: 20px 0 10px;
+    margin-top: 100px;
+}
+.footer-content{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer-content .footer_logo{
+    display: block;
+    align-self: center;
+}
+.footer-content .footer_seperate_left{
+    border-right:1px solid; 
+    width: 50px;
+}
+.footer-content .footer_seperate_right{
+    border-left:1px solid; 
+    width: 50px;
+}
+.footer-content .footer_contact{
+    font-size: 24px;
+    line-height: 1.5;
+}
+.footer_copyright{
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 10px ;
+    color: #7D7D7D;
+}
+@media screen and (width<768px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-content .footer_logo{
+        margin-bottom: 30px;
+    }
+    .footer-content .footer_seperate_left{
+        display: none;
+    }
+    .footer-content .footer_seperate_right{
+        display: none;
+    }
+    .footer-content .footer_contact{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}

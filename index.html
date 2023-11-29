@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睦和設計｜首頁｜室內裝修｜軟裝設計</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/index-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Gilda+Display&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="menu-switch">
+            <div class="navbar_transparent">
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <img class="navbar-logo-white" src="img/nav_Logo_white.png" alt="">
+                        <img class="navbar-logo-black" src="img/nav_Logo_black.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <label for="menu-switch" class="nav_hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-toggler" id="navbar-toggler"><a href="javascript:void(0);" id="listAbout">ABOUT</a>
+                        <ul id="navbar-submenu">
+                            <li><a href="about_Harmony.html">睦和源起</a></li>
+                            <li><a href="about_TheTeam.html">設計團隊</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="awards.html" id="listAwards">AWARDS</a></li>
+                    <li><a href="portfolio.html" id="listProtfolio">PROTFOLIO</a></li>
+                    <li><a href="workflow.html" id="listWorkflow">WORKFLOW</a></li>
+                    <li><a href="contact.html" id="listContact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <h1>和睦共享，家的溫暖，我們匠心獨具。</h1>
+            <img src="img/index_banner.png" alt="">
+    </header>
+    <content>
+        <section class="content-protfolio">
+            <h2>精選案例</h2>
+            <div class="divider"></div>
+            <div class="content-protfolio-cardList">
+                <div class="card">
+                    <div class="card-img"></div>
+                    <img src="img/index_prot_Spring.png">
+                    <h3 class="card_title" id="spring">沐春 Spring</h3>
+                </div>
+                <div class="card">
+                    <div class="card-img"></div>
+                    <img src="img/index_prot_Summer.png">
+                    <h3 class="card_title">涼夏 Summer</h3>
+                </div>
+                <div class="card">
+                    <div class="card-img"></div>
+                    <img src="img/index_prot_Autumn.png">
+                    <h3 class="card_title">秋韻 Autumn</h3>
+
+                </div>
+                <div class="card">
+                    <div class="card-img"></div>
+                    <img src="img/index_prot_Winter.png">
+                    <h3 class="card_title">暖冬 Winter</h3>
+                </div>
+            </div>
+            <div class="view-more"><a href="portfolio.html"><button class="view-more-btn hover-slide-right"><span>View More</span></button></a></div>
+        </section>
+        <section class="content-awards">
+            <h2>獲獎紀錄</h2>
+            <div class="divider"></div>
+            <div class="content-awards-firstSec">
+                <img src="img/index_awards_Rest.png">
+                <div class="awards-card">
+                    <h3 class="awards-title">休憩</h3>
+                    <ul class="awards-list">
+                        <li class="awards-name">2021 Taiwam Design Awards - Golden</li>
+                        <li class="awards-name">2021 U.S.A Design Awards - Excellence</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-awards-lastSec">
+                <img src="img/index_awards_Autumn.png">
+                <div class="awards-card">
+                    <h3 class="awards-title">秋韻</h3>
+                    <ul class="awards-list">
+                        <li class="awards-name">2021 Taiwam Design Awards - Golden</li>
+                        <li class="awards-name">2021 U.S.A Design Awards - Golden</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="awards.html"><button class="view-more-btn hover-slide-right"><span>View More</button></span></a>
+            </div>
+        </section>
+    </content>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer_logo"><img src="img/footer_logo.png" alt=""></div>
+            <div class="footer_seperate_left"></div>
+            <div class="footer_seperate_right"></div>
+            <div class="footer_contact">
+                <p>周一至周五 09:00 - 18:00</p>
+                <p>03-4251108</p>
+                <p>320 桃園市中壢區復興路四十六號九樓</p>
+                <p>Harmony_Design@gmail.com</p>
+            </div>
+        </div>
+        <p class="footer_copyright">本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</p>
+    </footer>
+    <script>
+        // Nav change language
+        var listAbout = document.getElementById("listAbout");
+        // listAbout.addEventListener("mouseenter",function(){
+        //     listAbout.innerText = "關於睦和";
+        // }, false)
+        // listAbout.addEventListener("mouseleave",function(){
+        //     listAbout.innerText = "ABOUT";
+        // }, false)
+
+        var navbarToggler = document.getElementById("navbar-toggler");
+        navbarToggler.addEventListener("mouseenter",function(){
+            listAbout.innerText = "關於睦和";
+            document.getElementById("navbar-submenu").style = "display: block"
+        }, false)
+        navbarToggler.addEventListener("mouseleave",function(){
+            listAbout.innerText = "ABOUT";
+            document.getElementById("navbar-submenu").style = "display: none"
+        }, false)
+
+
+        var awards = document.getElementById("listAwards");
+        awards.addEventListener("mouseenter",function(){
+            awards.innerText = "獲獎紀錄"
+        }, false)
+        awards.addEventListener("mouseleave",function(){
+            awards.innerText = "AWARDS"
+        }, false)        
+        
+        var protfolio = document.getElementById("listProtfolio");
+        protfolio.addEventListener("mouseenter",function(){
+            protfolio.innerText = "精選案例"
+        }, false)
+        protfolio.addEventListener("mouseleave",function(){
+            protfolio.innerText = "PROTFOLIO"
+        }, false)        
+        
+        var workflow = document.getElementById("listWorkflow");
+        workflow.addEventListener("mouseenter",function(){
+            workflow.innerText = "服務流程"
+        }, false)
+        workflow.addEventListener("mouseleave",function(){
+            workflow.innerText = "WORKFLOW"
+        }, false)
+
+        var contact = document.getElementById("listContact");
+        contact.addEventListener("mouseenter",function(){
+            contact.innerText = "聯絡我們"
+        }, false)
+        contact.addEventListener("mouseleave",function(){
+            contact.innerText = "CONTACT"
+        }, false)
+        // scroll
+        window.addEventListener("scroll", function () {
+        let nav = document.querySelector("nav");
+        let windowPosition = window.scrollY > 150;
+        nav.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+    
+</body>
+</html>
