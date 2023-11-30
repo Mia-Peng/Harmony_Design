@@ -119,10 +119,16 @@ label:hover{
     height: 30px;
     background-color: #fff;
     border: 1px solid #313131;
-    margin: 20px 0 0 20px;
+    /* margin: 20px 0 0 20px; */
     font-size: 16px;
     padding: 2px;
-    vertical-align: baseline;
+    vertical-align: middle;
+}
+.form-content{
+    margin: 20px 0 0 20px;
+}
+.form-content label{
+    margin: 0 10px;
 }
 .form-input-style:focus{
     outline: #7D7D7D;
@@ -136,6 +142,7 @@ label:hover{
 }
 .form-customer-note-style{
     height: 120px;
+    resize: none;
 }
 /* 驗證碼 */
 .form-content-verify{
