@@ -9,7 +9,6 @@ nav{
     width: 100%;
     position: fixed;
     z-index: 99;
-    /* display: none; */
 }
 .navbar_white{
     display: flex; /* none */
@@ -58,10 +57,10 @@ nav{
     color: #000;
 }
 .breadcrumb-list li:not(:last-child){
-    font-size: 30px;
+    font-size: 24px;
 }
 .breadcrumb-list li:last-child{
-    font-size: 48px;
+    font-size: 36px;
 }
 .breadcrumb-list li:not(:last-child)::after {
     padding: 14px;

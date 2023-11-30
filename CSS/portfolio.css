@@ -58,10 +58,10 @@ nav{
     color: #000;
 }
 .breadcrumb-list li:not(:last-child){
-    font-size: 30px;
+    font-size: 24px;
 }
 .breadcrumb-list li:last-child{
-    font-size: 48px;
+    font-size: 36px;
 }
 .breadcrumb-list li:not(:last-child)::after {
     padding: 14px;
@@ -127,11 +127,11 @@ nav{
     overflow: hidden;
 }
 .portfolio_title{
-    font-size: 36px;
+    font-size: 24px;
     padding: 40px 28px 22px;    
 }
 .portfolio_description{
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 28px 42px;   
     letter-spacing: 2px; 
     line-height: 1.5;

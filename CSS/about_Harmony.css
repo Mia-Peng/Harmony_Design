@@ -62,10 +62,11 @@ nav{
     color: #000;
 }
 .breadcrumb-list li:not(:last-child){
-    font-size: 30px;
+    font-size: 24px;
+    
 }
 .breadcrumb-list li:last-child{
-    font-size: 48px;
+    font-size: 36px;
 }
 .breadcrumb-list li:not(:last-child)::after {
     padding: 14px;
@@ -73,12 +74,17 @@ nav{
     content: "/\00a0";
 }
 /* breadcrumb */
+.main{
+    font-family: 'Noto Sans TC';
+}
 .harmony-office{
     width: 1200px;
     margin: auto;
 }
 .harmony-office img{
-    vertical-align: top;
+    display: block;
+    margin: auto;
+    max-width: 80%;
 }
 .harmony-office p{
     padding: 80px;
@@ -90,16 +96,12 @@ nav{
     line-height: 2;
 }
 .harmony-element{
-    max-width: 1200px;
-    margin: auto;
     margin-top: 100px;
     position: relative;
     display: flex;
     justify-content: center;
-}
-.harmony-element img{
-    vertical-align: top;
-}
+    display: block;
+} 
 .harmony-element p{
     font-size: 20px;
     width: 640px;
@@ -107,7 +109,7 @@ nav{
     line-height: 2;
     position: absolute;
     top: 200px;
-    right: 20px;
+    right: 200px;
 }
 .harmony-conclusion{
     margin-top: 100px;
@@ -122,38 +124,40 @@ nav{
     letter-spacing: 2px;
     line-height: 2;
 }
+
 .contact-us{
     width: 100%;
     text-align: center;
+    padding: 50px 0 80px;
 }
 .contact-us a{
     text-decoration: none;
-}
-.contact-us-btn{
+
+    display: block;
     margin: auto;
     width: 200px;
     height: 70px;
     background-color: transparent;
     border: 1px solid #626262;
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-us-btn::before {
     content: '';
     position: absolute;
-    background-color: rgb(28, 31, 30);
+    background-color: #626262;
     transition: 0.3s ease-out;
 }
 .contact-us-btn span{
-    font-size: 24px;
-    letter-spacing: 2px;
-    color: #626262;
-    
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #626262;    
     position: relative;
     display: inline-block;
     text-transform: uppercase;
     top: 0; left: 0;
-    width: 100%;
     transition: 0.2s;
 }
 .contact-us-btn:hover span{

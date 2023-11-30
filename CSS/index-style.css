@@ -1,6 +1,10 @@
 body{
     font-family: 'Gilda Display','Noto Serif TC';
 }
+::selection{
+    background-color: #626262;
+    color: #FFFFFF;
+}
 /* NAV */
 nav{
     width: 100% ;
@@ -175,8 +179,9 @@ nav:hover .navbar_transparent .navbar-menu a,
 .content-protfolio{
     background-color: #D5D3C8;
 }
+/**/
 content h2{
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
     margin: 0;
     padding: 120px 0 20px;
@@ -185,14 +190,13 @@ content h2{
 .divider{
     width: 400px;
     border-top:1px solid grey;
-    background-color: #000;
     margin: 10px auto 100px;    
 }
 .content-protfolio-cardList .card{
     position: relative;
 }
 .content-protfolio-cardList .card .img-cover{
-    width: 480px;
+    width: 100%;
     height: 650px;
     background-color: #000000;
     opacity: 0.7;
@@ -210,7 +214,7 @@ content h2{
 }
 .card h3{
     margin: 40px 0;
-    font-size: 36px;
+    font-size: 24px;
     text-align: center;
     font-weight: 200;
 }
@@ -222,15 +226,17 @@ content h2{
 }
 .view-more a{
     text-decoration: none;
-}
-.view-more-btn{
+
+    display: block;
     margin: auto;
     width: 200px;
     height: 70px;
     background-color: transparent;
     border: 1px solid #626262;
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .view-more-btn::before {
     content: '';
@@ -246,7 +252,6 @@ content h2{
     display: inline-block;
     text-transform: uppercase;
     top: 0; left: 0;
-    width: 100%;
     transition: 0.2s;
 }
 .view-more-btn:hover span{
@@ -282,9 +287,13 @@ content h2{
     position: relative;
     margin-bottom: 80px;
 }
+.content-awards-firstSec img{
+    max-width: 90%;
+}
 .content-awards-lastSec img{
     display: block;
     margin-left: auto;
+    max-width: 90%;
 }
 .content-awards-firstSec .awards-card{
     position: absolute;
