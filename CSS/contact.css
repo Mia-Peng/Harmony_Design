@@ -1,77 +1,8 @@
-body{
-    font-family: 'Gilda Display','Noto Serif TC';
-    background-image: url(../img/about_Harmony_bg.png);
-}
-header{
-    height: 100px;
-}
-nav{
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-}
-.navbar_white{
-    display: flex; /* none */
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-    background-color: #FFFFFF;
-}
-.navbar-logo img{    
-    margin: auto;
-}
-.navbar-menu{
-    display: flex;
-    list-style: none;
-}
-.navbar-menu li{
-    padding: 10px;
-}
-.navbar_white a{
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-decoration: none ;
-    color: #000;
-    display: flex;
-    height: 60px;
-    align-items: center;
-}
-.navbar-toggler{
-    color:white;
-}
-.navbar-toggler ul{
-    display: none;
-}
-.breadcrumb .breadcrumb-list{
-    list-style: none;
-    margin: 100px 240px;
-    padding-bottom: 40px;
-    padding-left: 120px;
-    border-bottom: 1px solid#000;
-}
-.breadcrumb .breadcrumb-list li{
-    display: inline;
-}
-.breadcrumb .breadcrumb-list li a{
-    text-decoration: none;
-    color: #000;
-}
-.breadcrumb-list li:not(:last-child){
-    font-size: 24px;
-}
-.breadcrumb-list li:last-child{
-    font-size: 36px;
-}
-.breadcrumb-list li:not(:last-child)::after {
-    padding: 14px;
-    color: black;
-    content: "/\00a0";
-}
-
-
 .contact-logo-area{
     display: flex;
     justify-content: center;
+    max-width: 768px;
+    margin: auto;
 }
 .contact-logo-area img{
     display: block;
@@ -92,7 +23,32 @@ nav{
     align-self: center;
     font-family: 'Noto Sans TC';
 }
-
+@media screen and (width<768px){
+    .contact-logo-area img{
+        max-width: 39.0625%;
+        min-width: 200px;
+    }
+    .contact-info-text{
+        font-size: clamp(16px, 2.60416vw, 20px);
+        line-height: 2.5;
+    }
+    .contact-info{
+        margin-top: 40px;
+        gap: 30px;
+        padding: 0 16px;
+    }
+}
+.office-map iframe{
+    width: 500px;
+    height: 250px;
+    border: 0;
+}
+@media screen and (width<768px){
+    .office-map iframe{
+        width: 375px;
+        height: 400px;
+    }
+}
 .contact-form{
     margin-top: 80px;
     display: flex;
@@ -103,6 +59,14 @@ nav{
 .contact-form p{
     font-size: 20px;
     font-family: 'Noto Sans TC';
+    text-align: center;
+}
+@media screen and (width<768px){
+    .contact-form p{
+        font-size: clamp(16px, 2.60416vw, 20px);
+        padding: 16px;
+        line-height: 1.5;
+    }
 }
 form{
     margin-top: 60px;
@@ -115,20 +79,17 @@ label:hover{
     cursor: pointer;
 }
 .form-input-style{
-    width: 430px;
+    width: 450px;
     height: 30px;
     background-color: #fff;
     border: 1px solid #313131;
-    /* margin: 20px 0 0 20px; */
+    margin: 0 10px;
     font-size: 16px;
-    padding: 2px;
+    padding: 6px;
     vertical-align: middle;
 }
 .form-content{
     margin: 20px 0 0 20px;
-}
-.form-content label{
-    margin: 0 10px;
 }
 .form-input-style:focus{
     outline: #7D7D7D;
@@ -143,6 +104,31 @@ label:hover{
 .form-customer-note-style{
     height: 120px;
     resize: none;
+}
+label[for="customer-name"]::after, label[for="customer-tel"]::after, label[for="customer-email"]::after,label[for="customer-verify"]::after{
+    content: '*';
+    color: red;
+}
+label[for="customer-note"]::after{
+    content: '*';
+    visibility: hidden;
+}
+/* radio */
+input[type="radio"]{
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    border-radius: 50%;
+    
+    border: 1px solid #313131;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+}
+input[type="radio"]:hover{
+    cursor: pointer;
+}
+input[type="radio"]:checked {
+    border: 5px solid #313131;
 }
 /* 驗證碼 */
 .form-content-verify{
@@ -162,35 +148,15 @@ label:hover{
     align-items: center;
     gap: 10px;
 }
-.form-content-verify-code p{
-    height: 30px;
-    background-color: #fff;
-    border: 1px solid #313131;
-    padding: 0 10px;
-    vertical-align: middle;
-    padding: 2px;
-    line-height: 1.5;
-}
 .form-content-verify-code img{
     display: block;
     width: 20px;
 }
-/* radio */
-input[type="radio"]{
-    width: 12px;
-    height: 12px;
-    appearance: none;
-    border-radius: 50%;
-
-    border: 1px solid #313131;
-    transition: 0.2s all linear;
-    margin-right: 5px;
-}
-input[type="radio"]:hover{
-    cursor: pointer;
-}
-input[type="radio"]:checked {
-    border: 4px solid #313131;
+.contact-form span{
+    display: block;
+    margin: 6px 0 0 76px;
+    color: red;
+    font-family: 'Noto Sans TC';
 }
 /* submit*/
 .form-submit{
@@ -225,59 +191,19 @@ input[type="radio"]:checked {
     cursor: pointer;
     box-shadow: inset 1px 1px 1px;
 }
-
-
-
-/* footer */
-footer{
-    font-family: 'Noto Sans TC';
-    background-color: #EBEAE6;
-    padding: 20px 0 10px;
-    margin-top: 100px;
-}
-.footer-content{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-.footer-content .footer_logo{
-    display: block;
-    align-self: center;
-}
-.footer-content .footer_seperate_left{
-    border-right:1px solid; 
-    width: 50px;
-}
-.footer-content .footer_seperate_right{
-    border-left:1px solid; 
-    width: 50px;
-}
-.footer-content .footer_contact{
-    font-size: 24px;
-    line-height: 1.5;
-}
-.footer_copyright{
-    text-align: center;
-    font-size: 12px;
-    padding-bottom: 10px ;
-    color: #7D7D7D;
-}
 @media screen and (width<768px) {
-    .footer-content{
+    .form-input-style{
+        width: 270px;
+    }
+    .form-customer-name-style{
+        width: 120px;
+    }
+    .form-content-verify{
+        display: flex;
         flex-direction: column;
+        align-items: start;
     }
-    .footer-content .footer_logo{
-        margin-bottom: 30px;
-    }
-    .footer-content .footer_seperate_left{
-        display: none;
-    }
-    .footer-content .footer_seperate_right{
-        display: none;
-    }
-    .footer-content .footer_contact{
-        font-size: 20px;
-        line-height: 1.5;
-        text-align: center;
+    .form-content-verify-code{
+        margin-left: 52px;
     }
 }

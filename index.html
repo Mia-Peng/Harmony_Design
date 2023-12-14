@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>睦和設計｜首頁｜室內裝修｜軟裝設計</title>
-    <link rel="icon" href="img/logo_icon.ico" type="image/x-icon" / >
+    <link rel="icon" href="img/logo_icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/index-style.css">
@@ -15,38 +15,52 @@
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="menu-switch">
             <div class="navbar_transparent">
                 <div class="navbar-logo">
                     <a href="index.html">
                         <img class="navbar-logo-white" src="img/nav_Logo_white.png" alt="">
                         <img class="navbar-logo-black" src="img/nav_Logo_black.png" alt="">
                     </a>
-                </div>
-                <div>
-                    <label for="menu-switch" class="nav_hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
+                </div> 
+                <div class="nav_hamburger" id="nav_hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <ul class="navbar-menu">
-                    <li class="navbar-toggler" id="navbar-toggler"><a href="javascript:void(0);" id="listAbout">ABOUT</a>
+                    <li id="navbar-toggler"><a href="javascript:void(0);" id="listAbout">關於睦和</a>
                         <ul id="navbar-submenu">
                             <li><a href="about_Harmony.html">睦和源起</a></li>
                             <li><a href="about_TheTeam.html">設計團隊</a></li>
                         </ul>
                     </li>
-                    <li><a href="awards.html" id="listAwards">AWARDS</a></li>
-                    <li><a href="portfolio.html" id="listProtfolio">PROTFOLIO</a></li>
-                    <li><a href="workflow.html" id="listWorkflow">WORKFLOW</a></li>
-                    <li><a href="contact.html" id="listContact">CONTACT</a></li>
+                    <li><a href="awards.html" id="listAwards">獲獎紀錄</a></li>
+                    <li><a href="portfolio.html" id="listProtfolio">精選案例</a></li>
+                    <li><a href="workflow.html" id="listWorkflow">服務流程</a></li>
+                    <li><a href="contact.html" id="listContact">聯絡我們</a></li>
                 </ul>
             </div>
+            <!--漢堡肉-->
+            <div class="h-background" id="h-background">
+                <ul class="h-navbar-menu" id="h-navbar-menu">
+                    <li id="h-navbar-toggler"><a href="javascript:void(0);" id="listAbout">關於睦和</a>
+                        <ul id="h-navbar-submenu">
+                            <li><a href="about_Harmony.html">睦和源起</a></li>
+                            <li><a href="about_TheTeam.html">設計團隊</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="awards.html" id="listAwards">獲獎紀錄</a></li>
+                    <li><a href="portfolio.html" id="listProtfolio">精選案例</a></li>
+                    <li><a href="workflow.html" id="listWorkflow">服務流程</a></li>
+                    <li><a href="contact.html" id="listContact">聯絡我們</a></li>
+                </ul>
+            </div>
+            <!--漢堡肉-->
         </nav>
         <div class="banner">
-            <h1>和睦共享，家的溫暖，我們匠心獨具。</h1>
-            <img src="img/index_banner.png" alt="">
+            <h1>和睦共享，家的溫暖，匠心獨具。</h1>
+            <img src="img/index_banner.png" alt="" class="banner_img_big">
+            <img src="img/index_banner_small.png" alt="" class="banner_img_small">
     </header>
     <content>
         <section class="content-protfolio">
@@ -55,24 +69,31 @@
             <div class="content-protfolio-cardList">
                 <div class="card">
                     <img src="img/index_prot_Spring.png">
-                    <div class="img-cover"></div>
-                    <h3 class="card_title" id="spring">沐春 Spring</h3>
-
+                    <div class="img-cover">
+                        <h3 class="card_title" id="spring">沐春 Spring</h3>
+                        <p>融合了沐浴與春天的元素，營造出一個清新、舒適的空間</p>
+                    </div>                    
                 </div>
                 <div class="card">
                     <img src="img/index_prot_Summer.png">
-                    <div class="img-cover"></div>
-                    <h3 class="card_title">涼夏 Summer</h3>
+                    <div class="img-cover">
+                        <h3 class="card_title">涼夏 Summer</h3>
+                        <p>融合清新色調和並引入自然陽光，打造一個宜人的居住環境</p>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="img/index_prot_Autumn.png">
-                    <div class="img-cover"></div>
-                    <h3 class="card_title">秋韻 Autumn</h3>
+                    <div class="img-cover">
+                        <h3 class="card_title">秋韻 Autumn</h3>
+                        <p>以不同層次的棕色調為主，營造出濃厚的秋天氛圍</p>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="img/index_prot_Winter.png">
-                    <div class="img-cover"></div>
-                    <h3 class="card_title">暖冬 Winter</h3>
+                    <div class="img-cover">
+                        <h3 class="card_title">暖冬 Winter</h3>
+                        <p>以柔和的色調和溫暖的照明打造一個溫馨的居住空間</p>
+                    </div>
                 </div>
             </div>
             <div class="view-more">
@@ -86,9 +107,11 @@
             <div class="divider"></div>
             <div class="content-awards-firstSec">
                 <img src="img/index_awards_Rest.png">
-                <div class="awards-card">
-                    <h3 class="awards-title">休憩 Rest</h3>
-                    <ul class="awards-list">
+                <div class="awards-card awards-card-first">
+                    <div class="img-cut">
+                        <h3 class="awards-title awards-title-first">休憩 Rest</h3>
+                    </div>                    
+                    <ul class="awards-list awards-list-first">
                         <li class="awards-name">2021 Taiwam Design Awards - Golden</li>
                         <li class="awards-name">2021 U.S.A Design Awards - Excellence</li>
                     </ul>
@@ -96,8 +119,10 @@
             </div>
             <div class="content-awards-lastSec">
                 <img src="img/index_awards_Autumn.png">
-                <div class="awards-card">
-                    <h3 class="awards-title">秋韻 Autumn</h3>
+                <div class="awards-card awards-card-sec">
+                    <div class="img-cut">
+                        <h3 class="awards-title">秋韻 Autumn</h3>
+                    </div>
                     <ul class="awards-list">
                         <li class="awards-name">2021 Taiwam Design Awards - Golden</li>
                         <li class="awards-name">2021 U.S.A Design Awards - Golden</li>
@@ -126,56 +151,77 @@
         <p class="footer_copyright">本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</p>
     </footer>
     <script>
-        // Nav change language
+        // show / hide 漢堡選單
+        let hBG = document.getElementById("nav_hamburger");
+        let hBackground = document.getElementById("h-background");
+        let hNavbarMenu = document.getElementById("h-navbar-menu");
+        let spans = hBG.getElementsByTagName("span")
+        hBG.onclick = function(){
+            if(hBackground.style.display === "none"){
+                hBackground.style.display = "block";
+                spans[0].style.display = "none"
+                spans[2].style.display = "none"
+            }else{
+                hBackground.style.display = "none";
+                spans[0].style.display = "block"
+                spans[2].style.display = "block"
+            }
+        }
+        // show / hide 漢堡子選單
+        let hNavbarToggler = document.getElementById("h-navbar-toggler");
+        hNavbarToggler.onclick = function(){
+            let hNavbarSubmenu = document.getElementById("h-navbar-submenu");
+            if(hNavbarSubmenu.style.display === "none"){
+                hNavbarSubmenu.style.display = "block";
+                hNavbarToggler.style.padding = "20px 0 0"
+            }else{
+                hNavbarSubmenu.style.display = "none";
+                hNavbarToggler.style.padding = "20px 0"
+            }
+        }
+        // 電腦版NAV
+        let navbarToggler = document.getElementById("navbar-toggler");
         var listAbout = document.getElementById("listAbout");
-        // listAbout.addEventListener("mouseenter",function(){
-        //     listAbout.innerText = "關於睦和";
-        // }, false)
-        // listAbout.addEventListener("mouseleave",function(){
-        //     listAbout.innerText = "ABOUT";
-        // }, false)
-
-        var navbarToggler = document.getElementById("navbar-toggler");
         navbarToggler.addEventListener("mouseenter",function(){
-            listAbout.innerText = "關於睦和";
+            listAbout.innerText = "ABOUT";
             document.getElementById("navbar-submenu").style = "display: block"
         }, false)
         navbarToggler.addEventListener("mouseleave",function(){
-            listAbout.innerText = "ABOUT";
+            listAbout.innerText = "關於睦和";
             document.getElementById("navbar-submenu").style = "display: none"
         }, false)
 
 
         var awards = document.getElementById("listAwards");
         awards.addEventListener("mouseenter",function(){
-            awards.innerText = "獲獎紀錄"
+            awards.innerText = "AWARDS"
         }, false)
         awards.addEventListener("mouseleave",function(){
-            awards.innerText = "AWARDS"
+            awards.innerText = "獲獎紀錄"
         }, false)        
         
         var protfolio = document.getElementById("listProtfolio");
         protfolio.addEventListener("mouseenter",function(){
-            protfolio.innerText = "精選案例"
+            protfolio.innerText = "PROTFOLIO"
         }, false)
         protfolio.addEventListener("mouseleave",function(){
-            protfolio.innerText = "PROTFOLIO"
+            protfolio.innerText = "精選案例"
         }, false)        
         
         var workflow = document.getElementById("listWorkflow");
         workflow.addEventListener("mouseenter",function(){
-            workflow.innerText = "服務流程"
+            workflow.innerText = "WORKFLOW"
         }, false)
         workflow.addEventListener("mouseleave",function(){
-            workflow.innerText = "WORKFLOW"
+            workflow.innerText = "服務流程"
         }, false)
 
         var contact = document.getElementById("listContact");
         contact.addEventListener("mouseenter",function(){
-            contact.innerText = "聯絡我們"
+            contact.innerText = "CONTACT"
         }, false)
         contact.addEventListener("mouseleave",function(){
-            contact.innerText = "CONTACT"
+            contact.innerText = "聯絡我們"
         }, false)
         // scroll
         window.addEventListener("scroll", function () {

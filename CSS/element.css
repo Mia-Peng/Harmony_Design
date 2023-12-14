@@ -1,0 +1,252 @@
+body{
+    font-family: 'Gilda Display','Noto Serif TC';
+    background-image: url(../img/about_Harmony_bg.png);
+}
+header{
+    height: 100px;
+}
+/* 首頁以外的NavBar */
+/* NAV */
+nav{
+    width: 100% ;
+    position: fixed;
+    z-index: 99;
+}
+/* 透明NAV */
+.navbar_transparent{
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: #fff;
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+}
+.navbar-menu li{
+    padding: 0px 10px;
+    height: 60px;
+}
+#navbar-toggler > a::after{
+    content: '▾';
+}
+.navbar_transparent .navbar-menu a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: auto;
+    color: black;
+    width: 140px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+#navbar-submenu{
+    display: none;   
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+#navbar-submenu li{
+    background-color: #fff;
+    text-indent: 0;
+    padding: 0;
+    height: 60px;
+}
+#navbar-submenu li+li{
+    border-top: 1px solid #EBEAE6;
+}
+#navbar-submenu li a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+    height: 60px;
+}
+#navbar-submenu li:hover{
+    background-color: #D5D3C8;
+}
+/* 漢堡 */
+.nav_hamburger{
+    display: none;
+}
+.nav_hamburger span{
+    width: 80%;
+    height: 3px;
+    margin: 4px auto;
+    background-color: #000;
+    border-radius: 2px;
+}
+/*漢堡肉*/
+.h-background{
+    display: none;
+    background-color: rgba(2, 2, 2, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 98;
+}
+.h-navbar-menu{
+    background-color: #ffffff;
+    width: 375px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    position: fixed;
+    right: 0px;
+    transition: right 5s;
+}
+#h-navbar-menu .hidden{
+    right: -375px;
+}
+.h-navbar-menu li{
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #EBEAE6;
+}
+.h-navbar-menu li a{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#h-navbar-toggler > a::after{
+    content: '▾';
+}
+#h-navbar-submenu{
+    display: none;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}
+#h-navbar-submenu li{
+    padding: 20px;
+    border: none;
+}
+#h-navbar-submenu li+li{
+    border-top: 1px solid #FFF;
+}
+/*漢堡肉*/
+@media screen and (width<1200px) {
+    .nav_hamburger{
+        width: 40px;
+        height: 40px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 2px;
+    }
+    .navbar_transparent{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+    .navbar-logo-white, .navbar-menu{
+        display: none;
+    }
+    .navbar-logo-black{
+        display: block;
+    }
+}
+/* 麵包屑 */
+.breadcrumb .breadcrumb-list{
+    list-style: none;
+    margin: 80px 10vw;
+    padding-bottom: 3.333333vh;
+    padding-left: 8vw;
+    border-bottom: 1px solid#000;
+}
+.breadcrumb .breadcrumb-list li{
+    display: inline;
+}
+.breadcrumb .breadcrumb-list li a{
+    text-decoration: none;
+    color: #000;
+}
+.breadcrumb-list li:not(:last-child){
+    font-size: 24px;
+}
+.breadcrumb-list li:last-child{
+    font-size: 36px;
+}
+.breadcrumb-list li:not(:last-child)::after {
+    padding: 6px;
+    color: black;
+    content: "/\00a0";
+}
+@media (width<1024px){
+    .breadcrumb .breadcrumb-list{
+        margin: 40px 10vw 60px;
+    }
+    .breadcrumb-list li:not(:last-child){
+        font-size: clamp(14px, 2.34375vw, 24px)
+    }
+    .breadcrumb-list li:last-child{
+        font-size: clamp(20px, 3.515625vw, 36px)
+    }
+}
+/* footer */
+footer{
+    font-family: 'Noto Sans TC';
+    background-color: #EBEAE6;
+    padding: 20px 0 10px;
+    margin-top: 100px;
+}
+.footer-content{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer-content .footer_logo{
+    align-self: center;
+}
+.footer-content .footer_seperate_left{
+    border-right:1px solid; 
+    width: 50px;
+}
+.footer-content .footer_seperate_right{
+    border-left:1px solid; 
+    width: 50px;
+}
+.footer-content .footer_contact{
+    font-size: 24px;
+    line-height: 1.5;
+}
+.footer_copyright{
+    text-align: center;
+    font-size: 12px;
+    padding: 0 10px 10px ;
+    color: #7D7D7D;
+}
+@media screen and (width<768px) {
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-content .footer_logo{
+        margin-bottom: 30px;
+        
+    }
+    .footer-content .footer_logo img{
+        max-width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .footer-content .footer_seperate_left{
+        display: none;
+    }
+    .footer-content .footer_seperate_right{
+        display: none;
+    }
+    .footer-content .footer_contact{
+        font-size: clamp(16px, 3.125vw, 24px);
+        line-height: 1.5;
+        text-align: center;
+    }
+}
