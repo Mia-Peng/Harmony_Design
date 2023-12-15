@@ -4,34 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>睦和設計｜設計團隊｜室內裝修｜軟裝設計</title>
-    <link rel="icon" href="img/logo_icon.ico" type="image/x-icon" / >
+    <link rel="icon" href="img/logo_icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/element.css">
     <link rel="stylesheet" href="CSS/about_TheTeam.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Gilda+Display&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="JS/contact.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="navbar_white">
+            <div class="navbar_transparent">
                 <div class="navbar-logo">
-                    <a href="index.html"><img class="navbar-logo-black" src="img/nav_Logo_black.png" alt=""></a>
+                    <a href="index.html">
+                        <img class="navbar-logo-black" src="img/nav_Logo_black.png" alt="">
+                    </a>
+                </div> 
+                <div class="nav_hamburger" id="nav_hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <ul class="navbar-menu">
-                    <li class="navbar-toggler"><a href="#" id="listAbout">ABOUT</a>
+                    <li id="navbar-toggler"><a href="javascript:void(0);" id="listAbout">關於睦和</a>
                         <ul id="navbar-submenu">
-                            <li><a href="about_Harmony.html">ORIGIN</a></li>
-                            <li><a href="about_TheTeam.html">THE TEAM</a></li>
+                            <li><a href="about_Harmony.html">睦和源起</a></li>
+                            <li><a href="about_TheTeam.html">設計團隊</a></li>
                         </ul>
                     </li>
-                    <li><a href="awards.html" id="listAwards">AWARDS</a></li>
-                    <li><a href="portfolio.html" id="listProtfolio">PROTFOLIO</a></li>
-                    <li><a href="workflow.html" id="listWorkflow">WORKFLOW</a></li>
-                    <li><a href="contact.html" id="listContact">CONTACT</a></li>
+                    <li><a href="awards.html" id="listAwards">獲獎紀錄</a></li>
+                    <li><a href="portfolio.html" id="listProtfolio">精選案例</a></li>
+                    <li><a href="workflow.html" id="listWorkflow">服務流程</a></li>
+                    <li><a href="contact.html" id="listContact">聯絡我們</a></li>
                 </ul>
             </div>
+            <!--漢堡肉-->
+            <div class="h-background" id="h-background">
+                <ul class="h-navbar-menu" id="h-navbar-menu">
+                    <li id="h-navbar-toggler"><a href="javascript:void(0);" id="listAbout">關於睦和</a>
+                        <ul id="h-navbar-submenu">
+                            <li><a href="about_Harmony.html">睦和源起</a></li>
+                            <li><a href="about_TheTeam.html">設計團隊</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="awards.html" id="listAwards">獲獎紀錄</a></li>
+                    <li><a href="portfolio.html" id="listProtfolio">精選案例</a></li>
+                    <li><a href="workflow.html" id="listWorkflow">服務流程</a></li>
+                    <li><a href="contact.html" id="listContact">聯絡我們</a></li>
+                </ul>
+            </div>
+            <!--漢堡肉-->
         </nav>
     </header>
     <div class="breadcrumb">

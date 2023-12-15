@@ -223,7 +223,7 @@ nav:hover .navbar_transparent .navbar-menu a,
     .banner h1{
         font-size: clamp(20px, 4.6875vw, 48px);   
         letter-spacing: clamp(2px, 0.97656vw, 10px);
-        top: 30vw;  
+        top: 35vw;  
     }
 }
 
@@ -242,6 +242,7 @@ content h2{
 @media screen and (width<768px){
     content h2{
         font-size: 30px;
+        padding: 80px 0 20px;
     }
     .divider{
         width: 300px; 
@@ -484,7 +485,7 @@ content h2{
 }
 @media screen and (width<768px){
     .content-awards-firstSec .awards-card, .content-awards-lastSec .awards-card, .content-awards-firstSec img,.content-awards-lastSec img{
-        max-width: 120%;
+        max-width: 100%;
     }
     .awards-card .awards-title{
         font-size: 20px;
