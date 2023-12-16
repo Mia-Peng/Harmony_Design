@@ -7,31 +7,56 @@
     <link rel="icon" href="img/logo_icon.ico" type="image/x-icon" / >
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/element.css">
     <link rel="stylesheet" href="CSS/workflow.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Gilda+Display&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="JS/contact.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="navbar_white">
+            <div class="navbar_transparent">
                 <div class="navbar-logo">
-                    <a href="index.html"><img class="navbar-logo-black" src="img/nav_Logo_black.png" alt=""></a>
+                    <a href="index.html">
+                        <img class="navbar-logo-black" src="img/nav_Logo_black.webp" alt="">
+                    </a>
+                </div> 
+                <div class="nav_hamburger" id="nav_hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
                 <ul class="navbar-menu">
-                    <li class="navbar-toggler"><a href="#" id="listAbout">ABOUT</a>
+                    <li id="navbar-toggler"><a href="javascript:void(0);" id="listAbout">關於睦和</a>
                         <ul id="navbar-submenu">
-                            <li><a href="about_Harmony.html">ORIGIN</a></li>
-                            <li><a href="about_TheTeam.html">THE TEAM</a></li>
+                            <li><a href="about_Harmony.html">睦和源起</a></li>
+                            <li><a href="about_TheTeam.html">設計團隊</a></li>
                         </ul>
                     </li>
-                    <li><a href="awards.html" id="listAwards">AWARDS</a></li>
-                    <li><a href="portfolio.html" id="listProtfolio">PROTFOLIO</a></li>
-                    <li><a href="workflow.html" id="listWorkflow">WORKFLOW</a></li>
-                    <li><a href="contact.html" id="listContact">CONTACT</a></li>
+                    <li><a href="awards.html" id="listAwards">獲獎紀錄</a></li>
+                    <li><a href="portfolio.html" id="listProtfolio">精選案例</a></li>
+                    <li><a href="workflow.html" id="listWorkflow">服務流程</a></li>
+                    <li><a href="contact.html" id="listContact">聯絡我們</a></li>
                 </ul>
             </div>
+            <!--漢堡肉-->
+            <div class="h-background" id="h-background">
+                <ul class="h-navbar-menu" id="h-navbar-menu">
+                    <li id="h-navbar-toggler"><a href="javascript:void(0);" id="listAbout">關於睦和</a>
+                        <ul id="h-navbar-submenu">
+                            <li><a href="about_Harmony.html">睦和源起</a></li>
+                            <li><a href="about_TheTeam.html">設計團隊</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="awards.html" id="listAwards">獲獎紀錄</a></li>
+                    <li><a href="portfolio.html" id="listProtfolio">精選案例</a></li>
+                    <li><a href="workflow.html" id="listWorkflow">服務流程</a></li>
+                    <li><a href="contact.html" id="listContact">聯絡我們</a></li>
+                </ul>
+            </div>
+            <!--漢堡肉-->
         </nav>
     </header>
     <div class="breadcrumb">
@@ -46,7 +71,7 @@
             <div class="col">
                 <div class="workflow-card">
                     <div class="iconbg">
-                        <img src="img/workflow_icon_01.png" alt="" class="workflow-icon"></div>
+                        <img src="img/workflow_icon_01.webp" alt="" class="workflow-icon"></div>
                     <div class="workflow-text">
                         <p class="workflow-order">01</p>
                         <p class="workflow-title">服務諮詢</p>
@@ -55,7 +80,7 @@
                 </div>                
                 <div class="workflow-card">
                     <div class="iconbg">
-                        <img src="img/workflow_icon_02.png" alt="" class="workflow-icon"></div>
+                        <img src="img/workflow_icon_02.webp" alt="" class="workflow-icon"></div>
                     <div class="workflow-text">
                         <p class="workflow-order">02</p>
                         <p class="workflow-title">現場會勘</p>
@@ -64,7 +89,7 @@
                 </div>
                 <div class="workflow-card">
                     <div class="iconbg">
-                        <img src="img/workflow_icon_03.png" alt="" class="workflow-icon"></div>
+                        <img src="img/workflow_icon_03.webp" alt="" class="workflow-icon"></div>
                     <div class="workflow-text">
                         <p class="workflow-order">03</p>
                         <p class="workflow-title">設計提案</p>
@@ -73,7 +98,7 @@
                 </div>
                 <div class="workflow-card">
                     <div class="iconbg">
-                        <img src="img/workflow_icon_04.png" alt="" class="workflow-icon"></div>
+                        <img src="img/workflow_icon_04.webp" alt="" class="workflow-icon"></div>
                     <div class="workflow-text">
                         <p class="workflow-order">04</p>
                         <p class="workflow-title">簽訂設計契約</p>
@@ -84,7 +109,7 @@
             <div class="col">
                 <div class="workflow-card">
                     <div class="iconbg">
-                        <img src="img/workflow_icon_05.png" alt="" class="workflow-icon"></div>
+                        <img src="img/workflow_icon_05.webp" alt="" class="workflow-icon"></div>
                     <div class="workflow-text">
                         <p class="workflow-order">05</p>
                         <p class="workflow-title">工程報價</p>
@@ -93,7 +118,7 @@
                 </div>
                 <div class="workflow-card">
                     <div class="iconbg">
-                        <img src="img/workflow_icon_06.png" alt="" class="workflow-icon"></div>
+                        <img src="img/workflow_icon_06.webp" alt="" class="workflow-icon"></div>
                     <div class="workflow-text">
                         <p class="workflow-order">06</p>
                         <p class="workflow-title">簽訂工程契約</p>
@@ -102,7 +127,7 @@
                 </div>
                 <div class="workflow-card">
                     <div class="iconbg">
-                        <img src="img/workflow_icon_07.png" alt="" class="workflow-icon"></div>
+                        <img src="img/workflow_icon_07.webp" alt="" class="workflow-icon"></div>
                     <div class="workflow-text">
                         <p class="workflow-order">07</p>
                         <p class="workflow-title">驗收交屋</p>
@@ -111,7 +136,7 @@
                 </div>
                 <div class="workflow-card">
                     <div class="iconbg">
-                        <img src="img/workflow_icon_08.png" alt="" class="workflow-icon"></div>
+                        <img src="img/workflow_icon_08.webp" alt="" class="workflow-icon"></div>
                     <div class="workflow-text">
                         <p class="workflow-order">08</p>
                         <p class="workflow-title">售後服務</p>
@@ -122,7 +147,7 @@
     </div>
     <footer>
         <div class="footer-content">
-            <div class="footer_logo"><img src="img/footer_logo.png" alt=""></div>
+            <div class="footer_logo"><img src="img/footer_logo.webp" alt=""></div>
             <div class="footer_seperate_left"></div>
             <div class="footer_seperate_right"></div>
             <div class="footer_contact">

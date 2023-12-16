@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>睦和設計｜獲獎紀錄｜室內裝修｜軟裝設計</title>
+    <title>沐春 Spring｜睦和設計｜精選案例｜室內裝修｜軟裝設計</title>
     <link rel="icon" href="img/logo_icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/element.css">
-    <link rel="stylesheet" href="CSS/awards.css">    
+    <link rel="stylesheet" href="CSS/portfolio_Spring.css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Gilda+Display&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Gilda+Display&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="JS/contact.js"></script>
 </head>
 <body>
@@ -61,42 +62,36 @@
     <div class="breadcrumb">
         <ul class="breadcrumb-list">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="javascript:void();">AWARDS</a></li>
-            <li><a href="javascript:void();">獲獎紀錄</a></li>
+            <li><a href="javascript:void();">PORTFOLIO</a></li>
+            <li><a href="javascript:void();">沐春 Spring</a></li>
         </ul>
     </div>
-    <div class="awardsList-colume">
-        <div class="awards-section awards-Rest">            
-            <img src="img/awards_rest.webp" alt="">           
-            <div class="awards-illustration">
-                <h3 class="work-title">休憩 Rest</h3>
-                <ul class="work-description">
-                    <li>2021 Taiwam Design Awards - Golden</li>
-                    <li>2021 U.S.A Design Awards - Excellence</li>
-                </ul>
+    <main>
+        <p class="prot-work-description">在這個設計中，我們融合了沐浴與春天的元素，營造出一個清新、舒適的空間。通過自然光線的巧妙運用和綠色植物的點綴，讓房間充滿春天的氛圍，為客戶提供一個愜意的沐浴體驗。同時，我們以溫暖的色調和舒適的材質打造了一個放鬆身心的環境，讓客戶在每次生活中處處感受到春天的活力和生機。</p>
+        <div class="img-container">
+            <div class="prot-work-wrap" id="prot-work-wrap">
+                    <div class="show-l-img" id="show-l-img">
+                        <img src="img/portfolio_01_01.webp" class="large-img">
+                        <img src="img/portfolio_01_02.webp" class="large-img">
+                        <img src="img/portfolio_01_03.webp" class="large-img">
+                    </div>
+            </div>
+            <div class="show-s-img">
+                <img src="img/portfolio_01_01.webp" class="small-img">
+                <img src="img/portfolio_01_02.webp" class="small-img">
+                <img src="img/portfolio_01_03.webp" class="small-img">
             </div>
         </div>
-        <div class="awards-section awards-Autumn">            
-            <img src="img/awards_autumn.webp" alt="">             
-            <div class="awards-illustration">
-                <h3 class="work-title">秋韻 Autumn</h3>
-                <ul class="work-description">
-                    <li>2019 SBID Design Awards - Gold</li>
-                    <li>2020 Paris Design Awards - Silver</li>
-                </ul>
-            </div>
+    </main>
+    <section>
+        <div class="go-back">
+            <a href="portfolio.html" class="go-back-btn hover-slide-right">
+                    <span>回上一頁</span>
+            </a>
         </div>
-        <div class="awards-section awards-TeaTesting">            
-            <img src="img/awards_teatesting.webp" alt="">           
-            <div class="awards-illustration">
-                <h3 class="work-title">品茗 Tea-tasting</h3>
-                <ul class="work-description">
-                    <li>2017 Taiwam Design Awards - Bronze</li>
-                    <li>2019 Tolyo Design Awards - Bronze</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </section>
+
+
     <footer>
         <div class="footer-content">
             <div class="footer_logo"><img src="img/footer_logo.webp" alt=""></div>
@@ -111,5 +106,21 @@
         </div>
         <p class="footer_copyright">本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</p>
     </footer>
+
+    <script>
+        let wrap = document.getElementById('prot-work-wrap');
+
+        let largeDiv = document.getElementById('show-l-img');
+        let smalls = document.getElementsByClassName('small-img');
+        let displayHeight = wrap.offsetHeight; //取得外框高度
+        console.log('show-l-img: ', displayHeight);
+        
+        for(let i=0; i<smalls.length; i++){
+            smalls[i].onclick = function(){
+                let moveHeight = -(displayHeight * i);
+                largeDiv.style.marginTop = `${moveHeight}px`;
+            }
+        }
+    </script>
 </body>
 </html>

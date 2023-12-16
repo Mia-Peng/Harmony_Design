@@ -1,82 +1,16 @@
-body{
-    font-family: 'Gilda Display','Noto Serif TC';
-    background-image: url(../img/about_Harmony_bg.png);
-}
-header{
-    height: 100px;
-}
-nav{
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    /* display: none; */
-}
-.navbar_white{
-    display: flex; /* none */
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100px;
-    background-color: #FFFFFF;
-}
-.navbar-logo img{    
-    margin: auto;
-}
-.navbar-menu{
-    display: flex;
-    list-style: none;
-}
-.navbar-menu li{
-    padding: 10px;
-}
-.navbar_white a{
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-decoration: none ;
-    color: #000;
-    display: flex;
-    height: 60px;
-    align-items: center;
-}
-.navbar-toggler{
-    color:white;
-}
-.navbar-toggler ul{
-    display: none;
-}
-.breadcrumb .breadcrumb-list{
-    list-style: none;
-    margin: 100px 240px;
-    padding-bottom: 40px;
-    padding-left: 120px;
-    border-bottom: 1px solid#000;
-}
-.breadcrumb .breadcrumb-list li{
-    display: inline;
-}
-.breadcrumb .breadcrumb-list li a{
-    text-decoration: none;
-    color: #000;
-}
-.breadcrumb-list li:not(:last-child){
-    font-size: 24px;
-}
-.breadcrumb-list li:last-child{
-    font-size: 36px;
-}
-.breadcrumb-list li:not(:last-child)::after {
-    padding: 14px;
-    color: black;
-    content: "/\00a0";
-}
-
-
 .row{
     justify-content: center;
     row-gap: 100px;
 }
+.portfolio_container{
+    display: none;
+}
+.active {
+    display: block;
+}
 .portfolio_card{
     background-color: #C7B09E;
-    border-radius: 10px;    
+    border-radius: 2px;    
 }
 .portfolio_card a{
     text-decoration: none;
@@ -84,16 +18,16 @@ nav{
 }
 .portfolio_card a img{
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 .portfolio_card a .img-mask{
-    width: 360px;
-    height: 295px;
+    width: 320px;
+    height: 260px;
     background-color: rgba(0, 0, 0);
     opacity: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,109 +56,74 @@ nav{
     cursor: pointer;
 }
 .portfolio_title, .portfolio_description{
-    max-width: 360px;
+    max-width: 320px;
     box-sizing: border-box;
     overflow: hidden;
 }
 .portfolio_title{
     font-size: 24px;
-    padding: 40px 28px 22px;    
+    padding: 30px 28px 26px;    
 }
 .portfolio_description{
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Noto Sans TC';
-    padding: 10px 28px 42px;   
+    padding: 0px 28px;   
     letter-spacing: 2px; 
     line-height: 1.5;
-    height: 160px;
+    height: 80px;
+}
+.viewmore-btn-samll{
+    background-color: #626262;
+    font-family: 'Noto Sans TC';
+    line-height: 2.5;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;;
+    color: #FFF;
+    width: 264px; 
+    margin: auto;
+    display: none;
+}
+@media screen and (width<1024px){
+    .portfolio_card{ 
+        height: 470px;
+    }
+    .portfolio_card a .img-mask{
+        display: none;
+    }
+    .viewmore-btn-samll{
+        display: block;
+    }
+
 }
 /* pagination */
 .pagination{
-    margin:60px 0 10px;
-    box-sizing: border-box;
-
-    width: 100%;
-    max-width: 940px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center;
-    
-}
-/* GENERAL STYLES */
-.pagination{
     margin-top: 80px;
-}
-.pagination ul{
-    list-style-type: none;
     display: flex;
     justify-content: center;
+    gap: 10px
 }
-.pagination ul li{
-    margin: 0 10px;
-}
-.pagination a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 6px;
+.pagination_button{
+    position: relative;
+    background-color: transparent;
+    padding: 10px 20px;
     color: #000000;
     font-size: 24px;
+    border: none;
+    cursor: pointer;
 }
-/* TWO */
-.pagination .is-active {
+.pagination_button::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #000000; 
+    transition: width .5s ease; 
+}
+.is-active::before {
     font-weight: bold;
     border-bottom: 1px solid #000000;
-}
-
-
-footer{
-    font-family: 'Noto Sans TC';
-    background-color: #EBEAE6;
-    padding: 20px 0 10px;
-    margin-top: 100px;
-}
-.footer-content{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
-.footer-content .footer_logo{
-    display: block;
-    align-self: center;
-}
-.footer-content .footer_seperate_left{
-    border-right:1px solid; 
-    width: 50px;
-}
-.footer-content .footer_seperate_right{
-    border-left:1px solid; 
-    width: 50px;
-}
-.footer-content .footer_contact{
-    font-size: 24px;
-    line-height: 1.5;
-}
-.footer_copyright{
-    text-align: center;
-    font-size: 12px;
-    padding-bottom: 10px ;
-    color: #7D7D7D;
-}
-@media screen and (width<768px) {
-    .footer-content{
-        flex-direction: column;
-    }
-    .footer-content .footer_logo{
-        margin-bottom: 30px;
-    }
-    .footer-content .footer_seperate_left{
-        display: none;
-    }
-    .footer-content .footer_seperate_right{
-        display: none;
-    }
-    .footer-content .footer_contact{
-        font-size: 20px;
-        line-height: 1.5;
-        text-align: center;
-    }
+    width: 100%;
 }

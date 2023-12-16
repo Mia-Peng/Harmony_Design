@@ -1,6 +1,6 @@
 body{
     font-family: 'Gilda Display','Noto Serif TC';
-    background-image: url(../img/about_Harmony_bg.png);
+    background-image: url(../img/about_Harmony_bg.webp);
 }
 header{
     height: 100px;
@@ -169,6 +169,7 @@ nav{
 .breadcrumb .breadcrumb-list li a{
     text-decoration: none;
     color: #000;
+    letter-spacing: 2px;
 }
 .breadcrumb-list li:not(:last-child){
     font-size: 24px;
@@ -183,7 +184,7 @@ nav{
 }
 @media (width<1024px){
     .breadcrumb .breadcrumb-list{
-        margin: 40px 10vw 60px;
+        margin: 40px 0 60px;
     }
     .breadcrumb-list li:not(:last-child){
         font-size: clamp(14px, 2.34375vw, 24px)
@@ -192,6 +193,7 @@ nav{
         font-size: clamp(20px, 3.515625vw, 36px)
     }
 }
+
 /* footer */
 footer{
     font-family: 'Noto Sans TC';
