@@ -74,8 +74,9 @@ window.addEventListener("load", function() {
     }, false)
     
     // 生成驗證碼
-    let captcha = '';
+    let captcha;
     function generateCaptcha() {
+        captcha = '';
         let canvas = $('verify-code');
         let context = canvas.getContext('2d');
         let canvasWidth = canvas.width;
@@ -116,11 +117,11 @@ window.addEventListener("load", function() {
     $("refresh-code").onclick = generateCaptcha;
 
     // 驗證
+    let customerVerifyAlert = $("customer-verify-alert");
+    let customerNameAlert = $("customer-name-alert");
+    let customerTelAlert = $("customer-tel-alert");
+    let customerEmailAlert = $("customer-email-alert");
     function verification(e){
-        let customerVerifyAlert = $("customer-verify-alert");
-        let customerNameAlert = $("customer-name-alert");
-        let customerTelAlert = $("customer-tel-alert");
-        let customerEmailAlert = $("customer-email-alert");
         customerVerifyAlert.innerText = customerNameAlert.innerText = customerTelAlert.innerText = customerEmailAlert.innerText = "";
         
         // 比對驗證碼 customer-verify
@@ -166,8 +167,5 @@ window.addEventListener("load", function() {
         alert("已收到您的聯絡表單，專員將於兩個工作日內與您聯繫。")
     }
     $("myform").onsubmit = verification;
-
-
-
 
 }, false);

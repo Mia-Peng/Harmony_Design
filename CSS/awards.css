@@ -7,12 +7,13 @@
     flex-wrap: wrap;
     margin-bottom: 80px;
     max-width: 1440px;
-    gap: 100px
+    column-gap: 60px;
+    row-gap: 20px;
 }
 .awards-Rest img,
 .awards-TeaTesting img{
     display: block;
-    box-shadow: #FFF -10px -10px 0px -1px, #000 -10px -10px;
+    box-shadow: #FFF -10px -10px 0px -1px, #767676 -10px -10px;
 }
 
 .awards-illustration{
@@ -25,8 +26,12 @@
     line-height: 3;
 }
 .awards-illustration ul li{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 2;
+}
+.awards-Rest .awards-illustration,
+.awards-TeaTesting .awards-illustration{
+    margin-left: 20px;
 }
 /* Autumn */
 .awards-Autumn{
@@ -34,9 +39,27 @@
 }
 .awards-Autumn img{
     display: block;
-    box-shadow: #FFF 10px 10px 0px -1px, #000 10px 10px;
+    box-shadow: #FFF 10px 10px 0px -1px, #767676 10px 10px;
 }
 .awards-Autumn h3,
 .awards-Autumn ul{
     text-align: right
+}
+.awards-Autumn .awards-illustration{
+    margin-right: 20px;
+}
+@media screen and (width<768px) {
+    .awards-section{
+        gap: 0px;
+    }
+    .awards-Rest img,
+    .awards-TeaTesting img,
+    .awards-Autumn img{
+        width: 95vw;
+    }
+    .awards-illustration h3{
+        font-size: clamp(24px, 4.6875vw, 36px);
+        line-height: 3;
+    }
+
 }

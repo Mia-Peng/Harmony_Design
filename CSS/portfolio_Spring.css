@@ -1,4 +1,4 @@
-section{
+main, section{
     font-family: 'Noto Sans TC';
 }
 .prot-work-description{
@@ -32,12 +32,12 @@ section{
 .show-s-img{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    cursor: pointer;
+    gap: 10px;    
 }
-.show-s-img img{
+.show-s-img .small-img-cutter img{
     display: block;
     width: 150px;
+    cursor: pointer;
 }
 @media screen and (width<1024px) {
     .prot-work-wrap{
@@ -50,19 +50,22 @@ section{
     .show-s-img{
         flex-direction: row;
     }
-    .show-s-img img{
-        width: 120px;
-        height: 120px;
-    }
 }
 
 @media screen and (width<768px) {
+    .prot-work-description{
+        line-height: 2.5;
+    }
     .show-s-img{
         flex-direction: row;
     }
-    .show-s-img img{
-        width: 80px;
-        height: 80px;
+    .small-img-cutter{
+        width: 90px;
+        height: 90px;
+        overflow: hidden;
+    }
+    .show-s-img .small-img-cutter img{
+        margin-left: -28px;
     }
 }
 

@@ -1,44 +1,219 @@
-.workflow-row{
+:root {
+    scroll-padding-top: 100px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.wrap{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 
+.workflow-list{
+    width: 110px;
+    position: sticky;
+    top: 82px;
+    /* background-color: #C7B09E; */
 }
-.workflow-card{
+.workflow-list a{
+    display: block; 
+    text-decoration: none;
+    color: #000;
+    line-height: 2;
+    padding: 2px 4px;
+    border-bottom: 1px solid #E0E0E0;
+    text-align: center;
+}
+.workflow-list a:hover{
+    color: #3d3d3d;
+}
+@media screen and (width<768px){
+    aside{
+        display: none;
+    }
+}
+main{
+    width: 800px;
+}
+details {
+	border-bottom: 1px solid #E0E0E0;
+}
+details[open]{
+    box-shadow: -3px 0 0 #E0E0E0;
+}
+details:first-of-type{
+    border-top: 1px solid #E0E0E0;
+}
+
+summary{
+	/* position: relative; */
+	cursor: pointer;
+	padding: 20px ;
+	list-style: none; 
     display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    position: relative;
-    margin-bottom: 80px;
-}
-.workflow-card .iconbg{
-    background-color: #E0E0E0;
-    padding: 35px;
-    border-radius: 50%;
-}
-.workflow-card .workflow-text{
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
 }
-.workflow-card .workflow-text .workflow-order{
-    font-family: 'Abhaya Libre';
+summary::-webkit-details-marker{
+    display: none; 
+}
+summary:hover {
+    background-color: #C7B09E88;
+}
+summary:focus {
+    outline: none;
+}	
+summary div {
+    display: flex;
+    align-items: center;
+}	
+.iconbg {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: #C7B09E; 
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.iconbg img{
+    width: 40px;
+    height: 40px;
+}
+.ordernum{
+    font-family: 'Noto sans TCz';
     font-weight: 800;
-    font-size: 64px;
+    font-size: 48px;
     color: #848484;
+    margin-right: 10px;
 }
-.workflow-card .workflow-text .workflow-title{
-    font-family: 'Noto Sans TC';
-    font-size: 36px;
+summary h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}	
+summary strong {
+    font-size: 24px;
+    font-weight: 700;
 }
-.connecting_line{
-    height: 80px;
-    border-left: 1px solid #000000;
+summary small {
+    color: #3d3d3d;
+    font-size: 16px;
+}
+.arrow{
+    border: solid rgb(78, 78, 78);
+    border-radius: 2px;
+    border-width: 0px 4px 4px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(45deg);
+    transition: .5s;
+}
+.spin{
+    transform: rotate(-135deg)
+}
+
+
+.details-content {
+	display: flex;
+	flex-wrap: wrap;
+    margin: 20px 50px 50px 104px;
+    font-family: 'Noto sans TC';
+	font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+@media screen and (width<768px){
+    .iconbg {
+        width: 42px;
+        height: 42px;
+    }
+    .iconbg img{
+        width: 36px;
+        height: 36px;
+    }
+    .ordernum{
+        font-size: 36px;
+    }
+    summary strong {
+        font-size: 20px;
+    }
+    summary small {
+        font-size: 12px;
+    }
+    .arrow{
+        border-width: 0px 3px 3px 0;
+        padding: 6px;
+    }
+    .details-content {
+        margin: 20px 36px 50px 50px;
+    }
+}
+
+.contact-us{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 80px;
+}
+.contact-us a{
+    text-decoration: none;
+
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    border: 1px solid #626262;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-us-btn::before {
+    content: '';
     position: absolute;
-    top: 153.2px;
-    left: 75px;
+    background-color: #626262;
+    transition: 0.3s ease-out;
 }
-.connecting_line_hidden{
-    display: none;
+.contact-us-btn span{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #626262;    
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    transition: 0.2s;
+}
+.contact-us-btn:hover span{
+    color: rgb(255,255,255);
+    outline: 0;
+    outline-offset: 0;
+    transition: 0.2s 0.1s;
+}
+.contact-us-btn:hover{
+    outline: 0;
+    outline-offset: 0;
+    cursor: pointer;
+}
+.hover-slide-right::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0; left: 0; 
+    height: 100%; width: 0%;
+}
+.hover-slide-right:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+@media screen and (width<768px) {
+    .contact-us{
+        padding: 60px 0 40px;
+    }
 }

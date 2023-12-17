@@ -184,7 +184,7 @@ nav{
 }
 @media (width<1024px){
     .breadcrumb .breadcrumb-list{
-        margin: 40px 0 60px;
+        margin: 40px 10px 60px;
     }
     .breadcrumb-list li:not(:last-child){
         font-size: clamp(14px, 2.34375vw, 24px)

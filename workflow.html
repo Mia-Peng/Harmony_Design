@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Gilda+Display&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <script src="JS/contact.js"></script>
+    <script src="JS/shared.js"></script>
 </head>
 <body>
     <header>
@@ -66,85 +66,155 @@
             <li><a href="javascript:void();">服務流程</a></li>
         </ul>
     </div>
-    <div class="workflow-main container">
-        <div class="workflow-row">
-            <div class="col">
-                <div class="workflow-card">
-                    <div class="iconbg">
-                        <img src="img/workflow_icon_01.webp" alt="" class="workflow-icon"></div>
-                    <div class="workflow-text">
-                        <p class="workflow-order">01</p>
-                        <p class="workflow-title">服務諮詢</p>
+
+    <div class="wrap">
+        <aside>
+            <ol class="workflow-list">
+                <li><a href="#workflow-01">服務諮詢</a></li>
+                <li><a href="#workflow-02">現場會勘</a></li>
+                <li><a href="#workflow-03">設計提案</a></li>
+                <li><a href="#workflow-04">簽訂設計契約</a></li>
+                <li><a href="#workflow-05">工程報價</a></li>
+                <li><a href="#workflow-06">簽訂工程契約</a></li>
+                <li><a href="#workflow-07">驗收交屋</a></li>
+                <li><a href="#workflow-08">售後服務</a></li>
+            </ol>
+        </aside>
+        <main>
+            <details>
+                <summary id="workflow-01">
+                    <div>
+                        <span class="iconbg"><img src="img/workflow_icon_01.webp" alt=""></span>
+                        <span class="ordernum">01</span>
+                        <h3>
+                            <strong>服務諮詢</strong>
+                            <small>Consultation</small>
+                        </h3>
                     </div>
-                    <div class="connecting_line"></div>
-                </div>                
-                <div class="workflow-card">
-                    <div class="iconbg">
-                        <img src="img/workflow_icon_02.webp" alt="" class="workflow-icon"></div>
-                    <div class="workflow-text">
-                        <p class="workflow-order">02</p>
-                        <p class="workflow-title">現場會勘</p>
-                    </div>
-                    <div class="connecting_line"></div>
+                    <div class="arrow"></div>
+                </summary>
+                <div class="details-content">
+                    在客服彙整您的基本需求後，我們將安排專屬設計師與您進行電話諮詢，以安排一場專屬於您的諮詢會議。這個過程旨在更深入地了解您的期望和需求，讓我們的設計師能夠為您量身定制最符合您需求的方案。這不僅是確保我們理解您的期望，也是為了確保我們的設計方案能夠完美地迎合您的願景和生活方式。我們致力於為您提供個性化、專業的服務，以創造出完美而獨特的空間，滿足您的期望和需求。
                 </div>
-                <div class="workflow-card">
-                    <div class="iconbg">
-                        <img src="img/workflow_icon_03.webp" alt="" class="workflow-icon"></div>
-                    <div class="workflow-text">
-                        <p class="workflow-order">03</p>
-                        <p class="workflow-title">設計提案</p>
+              </details>
+              <details>
+                <summary id="workflow-02">
+                    <div>
+                        <span class="iconbg"><img src="img/workflow_icon_02.webp" alt=""></span>
+                        <span class="ordernum">02</span>
+                        <h3>
+                            <strong>現場會勘</strong>
+                            <small>On-site Inspection</small>
+                        </h3>
                     </div>
-                    <div class="connecting_line"></div>
+                    <div class="arrow"></div>
+                </summary>
+                <div class="details-content">
+                    我們將派遣專業團隊進行案件現場的詳細會勘，以深入了解案件情況，確保我們對細節有清晰的把握。在這個階段，我們的團隊將進行全面的考察，包括建築結構、環境特徵以及可能影響設計的各個因素。這有助於我們更準確地理解您的需求，為您提供更專業、更精準的設計服務。
                 </div>
-                <div class="workflow-card">
-                    <div class="iconbg">
-                        <img src="img/workflow_icon_04.webp" alt="" class="workflow-icon"></div>
-                    <div class="workflow-text">
-                        <p class="workflow-order">04</p>
-                        <p class="workflow-title">簽訂設計契約</p>
-                        <div class="connecting_line connecting_line_hidden"></div>
+              </details>
+              <details>
+                <summary id="workflow-03">
+                    <div>
+                        <span class="iconbg"><img src="img/workflow_icon_03.webp" alt=""></span>
+                        <span class="ordernum">03</span>
+                        <h3>
+                            <strong>設計提案</strong>
+                            <small>Design Proposal</small>
+                        </h3>
                     </div>
+                    <div class="arrow"></div>
+                </summary>
+                <div class="details-content">
+                    睦和從設計概念出發，針對平面圖和配線圖提出精闢建議。這包括從最初的概念階段開始，提出創新而符合您需求的設計概念。我們專業的團隊將深入研究客戶提供的平面圖和配線圖，提出專業的建議和改進方案。這不僅僅是關於設計，更涉及到實際應用和功能性，因此我們會精心考慮每一個細節，確保所提出的建議能夠實現實際的操作需求，同時保持設計的美觀和實用性。這個過程旨在為您提供全面而實用的方案，讓您的空間設計在各個層面都能達到最優化的效果。
                 </div>
-            </div>   
-            <div class="col">
-                <div class="workflow-card">
-                    <div class="iconbg">
-                        <img src="img/workflow_icon_05.webp" alt="" class="workflow-icon"></div>
-                    <div class="workflow-text">
-                        <p class="workflow-order">05</p>
-                        <p class="workflow-title">工程報價</p>
+              </details>
+              <details>
+                <summary id="workflow-04">
+                    <div>
+                        <span class="iconbg"><img src="img/workflow_icon_04.webp" alt=""></span>
+                        <span class="ordernum">04</span>
+                        <h3>
+                            <strong>簽訂設計契約</strong>
+                            <small>Signing of Design Contract</small>
+                        </h3>
                     </div>
-                    <div class="connecting_line"></div>
+                    <div class="arrow"></div>
+                </summary>
+                <div class="details-content">
+                    設計合約簽訂完成後，我們即展開詳盡的空間規劃和精細圖面繪製工作。這階段將以您的需求和期望為基準，從細部設計到空間規劃，我們將進行全面考量。我們的團隊會深入研究您的要求，進行精確的空間配置和功能佈局。在繪製細部圖面時，我們謹慎細緻地勾勒出每個細節，包括家具安排、電力布線等，以確保設計方案的可行性和完整性。這個階段是設計實現化的關鍵，我們將以專業的態度和精湛的技術，確保您的想法和構想得到完美呈現。我們以客戶滿意為首要目標，堅持高品質、精準度和實用性，為您打造獨一無二、符合您期望的空間。
                 </div>
-                <div class="workflow-card">
-                    <div class="iconbg">
-                        <img src="img/workflow_icon_06.webp" alt="" class="workflow-icon"></div>
-                    <div class="workflow-text">
-                        <p class="workflow-order">06</p>
-                        <p class="workflow-title">簽訂工程契約</p>
+              </details>
+              <details>
+                <summary id="workflow-05">
+                    <div>
+                        <span class="iconbg"><img src="img/workflow_icon_05.webp" alt=""></span>
+                        <span class="ordernum">05</span>
+                        <h3>
+                            <strong>工程報價</strong>
+                            <small>Quotation</small>
+                        </h3>
                     </div>
-                    <div class="connecting_line"></div>
+                    <div class="arrow"></div>
+                </summary>
+                <div class="details-content">
+                    我們將根據設計圖進行工程報價，並評估所需的施工時程。這個過程包括仔細審視設計圖的每個細節，從材料成本到人力需求，精確計算工程成本。同時，我們會評估施工所需時間，確保施工進度與您的期望相符。我們將進行全面的成本分析，考慮各種變數和可能的挑戰，以提供準確可靠的報價和實際施工時程安排。這個階段是為了確保工程順利進行的重要環節，我們致力於提供透明、可靠的工程報價和合理的施工時程，確保您的項目能按時高效完成。
                 </div>
-                <div class="workflow-card">
-                    <div class="iconbg">
-                        <img src="img/workflow_icon_07.webp" alt="" class="workflow-icon"></div>
-                    <div class="workflow-text">
-                        <p class="workflow-order">07</p>
-                        <p class="workflow-title">驗收交屋</p>
+              </details>
+              <details>
+                <summary id="workflow-06">
+                    <div>
+                        <span class="iconbg"><img src="img/workflow_icon_06.webp" alt=""></span>
+                        <span class="ordernum">06</span>
+                        <h3>
+                            <strong>簽訂工程契約</strong>
+                            <small>Signing of Construction Contract</small>
+                        </h3>
                     </div>
-                    <div class="connecting_line"></div>
+                    <div class="arrow"></div>
+                </summary>
+                <div class="details-content">
+                    工程契約簽訂後，我們將按照合約所規定的預算和工期，依循施工圖紙進行工程施作並嚴格進行預算成本控制，同時確保施工工期的準時完成。工程師將全程參與監督和管理，確保工程品質，並詳細記錄工程進展。他們將負責實地監造，以確保施工符合規範、設計要求及安全標準，最終確保您的工程能按時完工並達到最優水準。
                 </div>
-                <div class="workflow-card">
-                    <div class="iconbg">
-                        <img src="img/workflow_icon_08.webp" alt="" class="workflow-icon"></div>
-                    <div class="workflow-text">
-                        <p class="workflow-order">08</p>
-                        <p class="workflow-title">售後服務</p>
+              </details>
+              <details>
+                <summary id="workflow-07">
+                    <div>
+                        <span class="iconbg"><img src="img/workflow_icon_07.webp" alt=""></span>
+                        <span class="ordernum">07</span>
+                        <h3>
+                            <strong>驗收交屋</strong>
+                            <small>Inspection and Acceptance</small>
+                        </h3>
                     </div>
+                    <div class="arrow"></div>
+                </summary>
+                <div class="details-content">
+                    工程完成後，我們將進行最後的驗收和交屋程序。這個階段是為了確保工程達到您的期望標準並符合相關法規和標準。我們將與您一同進行驗收，仔細檢查工程品質和完整性。一旦驗收通過，我們將進行正式的交屋手續，包括文件簽署和相關資料移交，確保您滿意並信心滿滿地迎接新的居住或工作空間。
                 </div>
-            </div>
-        </div> 
+              </details>
+              <details>
+                <summary id="workflow-08">
+                    <div>
+                        <span class="iconbg"><img src="img/workflow_icon_08.webp" alt=""></span>
+                        <span class="ordernum">08</span>
+                        <h3>
+                            <strong>售後服務</strong>
+                            <small>After-sales Service</small>
+                        </h3>
+                    </div>
+                    <div class="arrow"></div>
+                </summary>
+                <div class="details-content">
+                    睦和致力於提供完善的售後服務，針對工程內容提供至少一年保固以確保您的滿意度和品質。此外，我們隨時為您提供後續諮詢服務，以回答任何與工程相關的問題或提供進一步協助。您可以放心依靠我們的團隊，我們將以專業態度和積極主動的服務，為您提供持續支持。
+                </div>
+              </details>
+        </main>
     </div>
+    <div class="contact-us">
+        <a href="contact.html" class="contact-us-btn hover-slide-right"><span>預約諮詢</span></a>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="footer_logo"><img src="img/footer_logo.webp" alt=""></div>
@@ -159,5 +229,20 @@
         </div>
         <p class="footer_copyright">本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</p>
     </footer>
+
+    <script>
+        let arrows = document.querySelectorAll('.arrow');
+        let summarys = document.querySelectorAll('summary')
+        let asideList = document.querySelectorAll('.workflow-list li');
+        for(let i=0; i<arrows.length; i++){
+
+            summarys[i].onclick = function(){
+                arrows[i].classList.toggle("spin")
+            }
+            asideList[i].onclick = function(){
+                arrows[i].classList.toggle("spin")
+            }
+        }
+    </script>
 </body>
 </html>

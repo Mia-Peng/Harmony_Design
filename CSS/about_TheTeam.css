@@ -1,17 +1,53 @@
 .intro-card{
+    margin: auto;
     display: flex;
     align-items: center;
     margin: 30px 0;
 }
-.intro-card .member-info{
+.col{
+    opacity: 0;
+}
+.col:nth-child(1), .col:nth-child(2){
+    animation: fadeIn .5s ease-in-out forwards;
+}
+.col:nth-child(3), .col:nth-child(4){
+    animation: fadeIn .5s ease-in-out forwards;
+    animation-delay: .5s;
+}
+.col:nth-child(5), .col:nth-child(6){
+    animation: fadeIn .5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+.col:nth-child(7){
+    animation: fadeIn .5s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+.member-photo{
+    width: 160px;
+    height: 160px;
+}
+
+.member-info{
     padding: 10px;
 }
-.intro-card .member-info .member-name{
+.member-name{
     font-size: 24px;
+    font-weight: 700;
+    margin: 0 8px 20px;
+}
+.member-position{
     font-weight: 600;
-    margin: 0 8px 24px;
 }
-.member-info .member-position, .member-info .member-education{
+.member-position, .member-education{
     font-size: 20px;
-    margin: 16px 8px;
+    margin: 10px 8px;
+    line-height: 1.5;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
