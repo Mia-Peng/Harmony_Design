@@ -226,18 +226,17 @@ nav:hover .navbar_transparent .navbar-menu a,
         top: 35vw;  
     }
 }
-
 content h2{
     font-size: 36px;
     text-align: center;
-    margin: 0;
     padding: 120px 0 20px;
     letter-spacing: 10px;
+    text-indent: 5px;
 }
 .divider{
-    width: 400px;
-    border-top:1px solid grey;
-    margin: 10px auto 100px;    
+    width: 200px;
+    border-top: 1px solid #585858;
+    margin: 10px auto 100px;
 }
 @media screen and (width<768px){
     content h2{
@@ -245,7 +244,6 @@ content h2{
         padding: 80px 0 20px;
     }
     .divider{
-        width: 300px; 
         margin: 10px auto 60px;    
     }
 }
@@ -300,6 +298,10 @@ content h2{
     .content-protfolio-cardList .card{
         height: 30vw;
         overflow: hidden;
+        transition: .5s;
+    }
+    .content-protfolio-cardList .card:hover{
+        height: 60vw
     }
     .content-protfolio-cardList .card img{
         width: 100%;
