@@ -4,13 +4,31 @@
 html{
     scroll-behavior: smooth;
 }
+.workflow_banner{
+    max-width: 1440px;
+    overflow: hidden;
+}
+.workflow_banner img{
+    width: 100%;
+}
+.workflow_banner img:last-child{
+    width: 100%;
+    display: none;
+}
+@media screen and (width<768px) {
+    .workflow_banner img:first-child{
+        display: none;
+    }
+    .workflow_banner img:last-child{
+        display: block;
+    }
+}
 .wrap{
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-bottom: 30px;
+    margin:100px 0 30px;
 }
-
 .workflow-list{
     width: 110px;
     position: sticky;
@@ -29,7 +47,10 @@ html{
 .workflow-list a:hover{
     color: #3d3d3d;
 }
-@media screen and (width<768px){
+@media screen and (width<768px){    
+    .wrap{
+        margin-top: 60px;
+    }
     aside{
         display: none;
     }
