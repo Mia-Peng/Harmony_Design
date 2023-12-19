@@ -58,7 +58,7 @@
             <!--漢堡肉-->
         </nav>
         <div class="banner">
-            <h1>和睦共享，家的溫暖，匠心獨具。</h1>
+            <h1 class="slogan ">和睦共享，家的溫暖，匠心獨具。</h1>
             <img src="img/index_banner.webp" alt="" class="banner_img_big">
             <img src="img/index_banner_small.webp" alt="" class="banner_img_small">
     </header>
@@ -225,9 +225,15 @@
         }, false)
         // scroll
         window.addEventListener("scroll", function () {
-        let nav = document.querySelector("nav");
-        let windowPosition = window.scrollY > 150;
-        nav.classList.toggle('scrolling-active', windowPosition);
+            let nav = document.querySelector("nav");
+            let windowPosition = window.scrollY > 200;
+            nav.classList.toggle('scrolling-active', windowPosition);  
+        })
+        let slogan = document.querySelector(".slogan");
+        window.addEventListener("scroll", function (){
+            let slogan = document.querySelector(".slogan");
+            let windowPosition = window.scrollY > 100;
+            slogan.classList.toggle('fadein', windowPosition);
         })
     </script>
     
